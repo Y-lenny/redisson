@@ -63,6 +63,7 @@
         <module>redisson-helidon</module>
         <module>redisson-quarkus</module>
         <module>redisson-micronaut</module>
+        <module>redisson-example</module>
     </modules>
 
     <profiles>
@@ -196,7 +197,7 @@
       <testOutputDirectory>${basedir}/target/test-classes</testOutputDirectory>
       <sourceDirectory>${basedir}/src/main/java</sourceDirectory>
       <testSourceDirectory>${basedir}/src/test/java</testSourceDirectory>
-      
+
       <plugins>
           <plugin>
          	<groupId>org.sonatype.plugins</groupId>
