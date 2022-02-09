@@ -19,9 +19,9 @@ import org.redisson.RedissonLockEntry;
 import org.redisson.misc.RPromise;
 
 /**
- * 
- * @author Nikita Koksharov
  *
+ * @author Nikita Koksharov
+ * 锁的发布订阅实现
  */
 public class LockPubSub extends PublishSubscribe<RedissonLockEntry> {
 
@@ -31,7 +31,7 @@ public class LockPubSub extends PublishSubscribe<RedissonLockEntry> {
     public LockPubSub(PublishSubscribeService service) {
         super(service);
     }
-    
+
     @Override
     protected RedissonLockEntry createEntry(RPromise<RedissonLockEntry> newPromise) {
         return new RedissonLockEntry(newPromise);
